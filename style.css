@@ -1,0 +1,226 @@
+:root {
+    --green-color: #1a5126;
+    --backgr-color: #f3e9dc;
+    --light-green: #1a51265d;
+    --first-bc: #1bc43fd2; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--backgr-color);
+    width: 100vw;
+}
+
+/***************Bellow there is the header layout**************/
+
+header {
+    display: inline-flex;
+    width: 100%;
+    height: 55px;
+    justify-content: space-between;
+    background-color: var(--green-color);
+    padding: 10px;
+    color: white;
+}
+
+.options {
+    display: inline-flex;
+    flex-direction: column;
+    height: 800px;
+    justify-content: right;
+    z-index: 1111;
+    align-items: end;
+}
+
+.burger {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: xx-large;
+
+}
+
+.burger_nav {
+    display: none;
+    flex-direction: column;
+    background-color: var(--green-color);
+    margin: 10px;
+    padding: 25px;
+    box-shadow: 1px 1px 15px 1px rgb(0,0,0.1);
+    border-radius: 5px;
+    z-index: 1111;
+}
+
+a {
+    font-size: x-large;
+    color: white;
+}
+
+.show {
+    display: flex
+}
+
+/*This is the picture*/
+.main_picture {
+    display: flex;
+    flex-direction: column;
+    background-image: url(images/main_pic.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position:bottom;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-bottom: 45px;
+}
+
+.main_picture h1 {
+    margin-bottom: 20px;
+}
+
+.main_picture p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    width: 50%;
+    text-align: center;
+    background-color: var(--green-color);
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid var(--backgr-color);
+}
+
+/***************** This is the sections layout****************/
+
+.section_1 {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: row;
+    padding: 10px;
+    gap: 10px;
+}
+
+.section_2 {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: row;
+    padding: 10px;
+    gap: 10px;
+}
+
+.section_3 {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: row;
+    padding: 10px;
+    gap: 10px;
+}
+
+
+
+/***************** This is the section aside****************/
+
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+}
+
+.jardin {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light-green);
+    align-items: center;
+    padding: 20px;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 40px;
+    gap: 10px;
+}
+
+.jardin h3 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: var(--green-color);
+}
+
+.jardin p {
+    text-align: center;
+    font-size: 18px;
+}
+
+.jardin_map {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    z-index: 1111;
+    gap: 15px
+}
+
+.jardin_map .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jardin_map h4 {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    color: var(--green-color);
+}
+
+.jardin_map iframe {
+    width: 100%;
+    min-height: 300px;
+    box-shadow: 1px 1px 15px 5px var(--green-color);
+}
+
+/************* This is the section main **************/
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+main .first_section{
+    display: flex;
+    width: 100%;
+}
+
+.first_section .img_1 {
+    border-radius: 5px;
+    height: auto;
+    width: 100%;
+    height: fit-content;
+    
+}
+
+/************* This is the second section main **************/
+
+
+
+/********************This is the footer*************************/
+footer {
+    display: flex;
+}
