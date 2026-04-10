@@ -3,6 +3,7 @@
     --backgr-color: #f3e9dc;
     --light-green: #1a512636;
     --first-bc: #1bc4408c; 
+    --hover: rgb(212, 230, 132);
 }
 
 * {
@@ -126,6 +127,17 @@ a {
     gap: 40px;
 }
 
+#section_3 {
+    display: flex;
+    width: 100%;
+    height: 30vh;
+    flex-direction: column;
+    padding: 10px;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
 /***************** This is the section aside ****************/
 
 aside {
@@ -185,7 +197,6 @@ aside h3 {
     display: flex;
     flex-direction: column;
     width: 100%;
-    z-index: -1;
     gap: 15px
 }
 
@@ -234,9 +245,38 @@ aside h3 {
     width: 50%;
 }
 
-/****************** This is the last section loyout********************/
+/*********************** This is the section 3 layout ****************************/
 
-#section_3 {
+#section_3 h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--green-color);
+    text-align: center;
+    font-size: xx-large;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 1px 1px 30px 15px var(--light-green);
+    margin-top: 20px;
+}
+
+#section_3 p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    font-size: large;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 1px 1px 30px 15px var(--light-green);
+}
+
+
+
+/****************** This is the last section 4 loyout********************/
+
+#section_4 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -247,15 +287,35 @@ aside h3 {
     background-color: var(--first-bc);
 }
 
-#section_3 div {
+#section_4 div {
     background-color: var(--backgr-color);
     border-radius: 20px;
     border: 10px double var(--first-bc);
     box-shadow: 1px 1px 15px 1px rgb(0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    gap: 5px;
+    transition: ease-in-out 0.5s;
+}
 
+#section_4 div:hover {
+    background-color: var(--hover);
+}
+
+#section_4 div h3 {
+    color: var(--green-color);
 }
 
 /********************This is the footer*************************/
 footer {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    background-color: var(--green-color);
 }
