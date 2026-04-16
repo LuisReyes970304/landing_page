@@ -21,7 +21,9 @@ const capaArriba = document.querySelector(".capa_arriba");
 const imagen = capaArriba.querySelector("img");
 const videoOculto = capaArriba.querySelector("iframe");
 
-imagen.ATTRIBUTE_NODE.addEventListener("click", () => {
+imagen.addEventListener("click", () => {
     imagen.style.display = "none";
     videoOculto.style.display = "flex";
+
+    videoOculto.src += "&autoplay=1"; 
 });
